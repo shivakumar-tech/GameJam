@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Jam Competition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Game Jam Competition</h1>
+        <p>Unleash your creativity and build amazing games within a limited time!</p>
+    </header>
+
+    <section id="registration">
+        <h2>Register Now</h2>
+        <form id="registrationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="category">Select Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Choose a category</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        
+            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="button" onclick="exportToExcel()">Export to Excel</button>
+        </form>
+    </section>
+
+    <section id="categories">
+        <h2>Categories</h2>
+        <ul>
+            <li><strong>Beginner:</strong> For newcomers to game development.</li>
+            <li><strong>Intermediate:</strong> For those with some experience.</li>
+            <li><strong>Advanced:</strong> For experienced developers.</li>
+        </ul>
+    </section>
+
+    <section id="rules">
+        <h2>Rules</h2>
+        <ol>
+            <li>All games must be original.</li>
+            <li>Teams can have up to 4 members.</li>
+            <li>Games must adhere to the theme provided at the start.</li>
+            <li>Submissions are due by the deadline announced on the event day.</li>
+            <li>Any violations may lead to disqualification.</li>
+        </ol>
+    </section>
+
+    <section id="faqs">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <div class="faq">
+            <h3>How do I register?</h3>
+            <p>Simply fill out the registration form above and submit it.</p>
+        </div>
+        <div class="faq">
+            <h3>What is the theme of the Game Jam?</h3>
+            <p>The theme will be revealed at the start of the competition.</p>
+        </div>
+        <div class="faq">
+            <h3>Can I work in a team?</h3>
+            <p>Yes, teams of up to 4 members are allowed.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Game Jam Competition. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
